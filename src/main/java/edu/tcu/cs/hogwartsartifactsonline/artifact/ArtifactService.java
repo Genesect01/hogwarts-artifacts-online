@@ -41,7 +41,7 @@ public class ArtifactService {
                     oldArtifact.setImageUrl(update.getImageUrl());
                     return this.artifactRepository.save(oldArtifact);
                 })
-                .orElseThrow(() -> new ObjectNotFoundException("arifact", artifactId));
+                .orElseThrow(() -> new ObjectNotFoundException("artifact", artifactId));
     }
 
     public void delete(String artifactId){
