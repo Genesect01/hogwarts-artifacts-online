@@ -16,5 +16,7 @@ public class HogwartsArtifactsOnlineApplication {
     public IdWorker idWorker(){
         return new IdWorker(1, 1);
     }
+
+
 }
 
