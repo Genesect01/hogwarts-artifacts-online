@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 @Entity
 public class Artifact implements Serializable {
+
     @Id
     private String id;
 
@@ -20,6 +21,7 @@ public class Artifact implements Serializable {
 
     @ManyToOne
     private Wizard owner;
+
 
     public Artifact() {
     }
@@ -55,7 +57,6 @@ public class Artifact implements Serializable {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
-
 
     public Wizard getOwner() {
         return owner;

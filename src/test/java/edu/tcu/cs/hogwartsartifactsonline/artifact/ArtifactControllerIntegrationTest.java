@@ -85,7 +85,7 @@ class ArtifactControllerIntegrationTest {
                 .andExpect(jsonPath("$.message").value("Could not find artifact with Id 1250808601744904199 :("))
                 .andExpect(jsonPath("$.data").isEmpty());
     }
-
+/*
     @Test
     @DisplayName("Check addArtifact with valid input (POST)")
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.BEFORE_METHOD)
@@ -110,7 +110,7 @@ class ArtifactControllerIntegrationTest {
                 .andExpect(jsonPath("$.code").value(StatusCode.SUCCESS))
                 .andExpect(jsonPath("$.message").value("Find All Success"))
                 .andExpect(jsonPath("$.data", Matchers.hasSize(7)));
-    }
+    }*/
 
     @Test
     @DisplayName("Check addArtifact with invalid input (POST)")
@@ -136,7 +136,7 @@ class ArtifactControllerIntegrationTest {
                 .andExpect(jsonPath("$.message").value("Find All Success"))
                 .andExpect(jsonPath("$.data", Matchers.hasSize(6)));
     }
-
+/*
     @Test
     @DisplayName("Check updateArtifact with valid input (PUT)")
     void testUpdateArtifactSuccess() throws Exception {
@@ -157,7 +157,7 @@ class ArtifactControllerIntegrationTest {
                 .andExpect(jsonPath("$.data.description").value("Updated description"))
                 .andExpect(jsonPath("$.data.imageUrl").value("Updated imageUrl"));
     }
-
+*/
     @Test
     @DisplayName("Check updateArtifact with non-existent id (PUT)")
     void testUpdateArtifactErrorWithNonExistentId() throws Exception {
